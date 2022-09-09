@@ -308,6 +308,8 @@ font-family: 'Hiragino Sans GB', sans-serif;
 
 .flex-container .footer_link{
   color: #317191;
+  position: absolute;
+  z-index: 12;
 }
 
 #particles-js{

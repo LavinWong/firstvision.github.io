@@ -315,7 +315,7 @@ font-family: 'Hiragino Sans GB', sans-serif;
 
 
 .hiddenMemo {
-	width:50px;
+	width:300px;
   	overflow: hidden;			
   	text-overflow: ellipsis;
   	display: -webkit-box;     	

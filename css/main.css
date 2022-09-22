@@ -315,11 +315,30 @@ font-family: 'Hiragino Sans GB', sans-serif;
 
 
 .hiddenMemo {
-	width:200px;					
+	width:200px;
   	overflow: hidden;			
   	text-overflow: ellipsis;
   	display: -webkit-box;     	
   	-webkit-line-clamp: 2;    	
   	-webkit-box-orient: vertical; 
 }
+
+.data{
+            /*注意：此处使用width无效*/
+            display: flex;
+        }
+        .data>div{
+            box-sizing: border-box;
+            /* 如果 div高度不一样，让div顶部对齐使用vertical-align*/
+            /*vertical-align: top;*/
+        }
+        .data_left{
+            width:300px;
+            background-color: #E6A23C;
+        }
+        .data_middle{
+            flex: 1;
+            background-color: #909399;
+        }
+
 

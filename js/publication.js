@@ -243,3 +243,23 @@ function submitMSG(valid, msg){
 
 
 })(jQuery);
+
+function changeColor(x) {
+    x.style.background = '#D3D3D3';
+}
+function changeColorBack(x) {
+    x.style.background = 'white';
+}
+
+function showAll(obj){
+		 	var wordnodeoffset = $(obj).offset();
+    		var str=$(obj).html();
+    		//这里是判断内容是否过多，过多就加大显示的宽度
+    		if($("#allDiv").height() > 100){
+    			$("#allDiv").css("width", "400px");
+    		}else{
+    			$("#allDiv").css("width", "200px");
+    		}
+    		$("#allDiv").html(str);
+    		$("#allDiv").css("display", "block").css("word-break","break-all").css("top", wordnodeoffset.top + $(obj).height()+5 + "px").css("left", wordnodeoffset.left + "px");
+  		}

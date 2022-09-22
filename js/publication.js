@@ -248,13 +248,12 @@ function changeColor(x) {
     x.style.background = '#D3D3D3';
 }
 function changeColorBack(x) {
-    x.style.background = 'white';
+    x.style.background = (255,255,255,0);
 }
 
 function showAll(obj){
 		 	var wordnodeoffset = $(obj).offset();
     		var str=$(obj).html();
-    		//这里是判断内容是否过多，过多就加大显示的宽度
     		if($("#allDiv").height() > 100){
     			$("#allDiv").css("width", "400px");
     		}else{
